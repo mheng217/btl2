@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trà Sữa Nhài</title>
+    <link rel="stylesheet" href="styledouong.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Trà Sữa Nhài</h1>
+      <p class="intro">
+        Trà sữa nhài mang hương thơm dịu nhẹ của hoa nhài kết hợp cùng vị béo
+        ngậy của sữa, là lựa chọn tuyệt vời cho những ngày hè mát mẻ.
+      </p>
+      <img src="trà sữa nhài.jpg" alt="Trà Sữa Nhài" />
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>3g trà nhài khô (hoặc 1 túi lọc trà nhài)</li>
+        <li>150ml nước sôi</li>
+        <li>100ml sữa tươi (hoặc sữa đặc pha loãng)</li>
+        <li>1–2 thìa cà phê đường hoặc mật ong</li>
+        <li>Đá viên (nếu uống lạnh)</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Pha trà:</strong> Ngâm trà nhài trong nước sôi khoảng 5 phút
+          rồi lọc bỏ xác trà.
+        </li>
+        <li>
+          <strong>Thêm sữa:</strong> Khi trà còn ấm, thêm sữa và đường/mật ong
+          vào khuấy đều.
+        </li>
+        <li>
+          <strong>Hoàn thành:</strong> Có thể thêm đá nếu uống lạnh. Rót ra ly
+          và thưởng thức!
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

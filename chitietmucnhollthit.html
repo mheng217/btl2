@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mực Ống Nhồi Thịt</title>
+    <link rel="stylesheet" href="stylemonchinh.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Mực Ống Nhồi Thịt</h1>
+      <p class="intro">
+        Món bánh nhỏ xinh với lớp vỏ mềm dai và nhân kem trứng béo mịn tan chảy
+        trong miệng – tuyệt vời cho bữa trà chiều.
+      </p>
+      <img src="muc-ong-nhoi-thit.jpg" alt="Mực Ống Nhồi Thịt" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>500g mực ống tươi (chọn con vừa hoặc lớn)</li>
+        <li>200g thịt nạc heo xay</li>
+        <li>50g giò sống</li>
+        <li>1 củ hành tây nhỏ</li>
+        <li>2-3 nhánh hành lá</li>
+        <li>1/2 củ cà rốt (tùy chọn)</li>
+        <li>1 quả trứng gà</li>
+        <li>Gia vị: nước mắm, đường, tiêu xay, hạt nêm</li>
+        <li>Dầu ăn</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Sơ chế mực:</strong> Rửa sạch mực ống, nhẹ nhàng rút đầu và
+          túi mực ra. Để ráo nước. Có thể dùng tăm nhọn xăm nhẹ quanh thân mực
+          để khi hấp hoặc chiên không bị co rút.
+        </li>
+        <li>
+          <strong>Chuẩn bị nhân nhồi:</strong>
+          <ul>
+            <li>Hành tây bóc vỏ, thái hạt lựu nhỏ.</li>
+            <li>
+              Hành lá rửa sạch, phần đầu trắng băm nhỏ, phần lá xanh thái nhỏ để
+              riêng.
+            </li>
+            <li>Cà rốt gọt vỏ, thái hạt lựu nhỏ (nếu dùng).</li>
+            <li>
+              Cho thịt xay, giò sống, hành tây băm, đầu hành lá băm, cà rốt (nếu
+              dùng), trứng gà vào tô. Nêm thêm khoảng 1 muỗng canh nước mắm, 1/2
+              muỗng cà phê đường, 1/2 muỗng cà phê tiêu xay, 1/2 muỗng cà phê
+              hạt nêm. Trộn đều tất cả các nguyên liệu.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Nhồi thịt vào mực:</strong> Dùng thìa nhỏ nhồi hỗn hợp thịt
+          vào thân mực, nhồi vừa phải, không quá đầy để tránh khi nấu thịt bị
+          bung ra. Có thể dùng tăm ghim kín phần đầu mực lại.
+        </li>
+        <li>
+          <strong>Chế biến:</strong> Bạn có thể chọn một trong các cách chế biến
+          sau:
+          <ul>
+            <li>
+              <strong>Hấp:</strong> Xếp mực đã nhồi vào xửng hấp. Hấp khoảng
+              15-20 phút cho đến khi mực chín.
+            </li>
+            <li>
+              <strong>Chiên:</strong> Đun nóng dầu ăn trong chảo. Chiên mực đã
+              nhồi đến khi vàng đều các mặt. Vớt ra để ráo dầu.
+            </li>
+            <li>
+              <strong>Sốt cà chua:</strong> Chiên sơ mực đã nhồi cho hơi vàng.
+              Phi thơm hành tỏi, cho cà chua băm hoặc sốt cà chua vào xào. Thêm
+              chút nước, nêm nếm gia vị vừa ăn. Cho mực vào đun nhỏ lửa cho đến
+              khi sốt sánh lại.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Hoàn thiện:</strong> Gắp mực ra đĩa. Nếu hấp, có thể rưới thêm
+          chút nước hấp hoặc làm nước mắm chua ngọt để chấm. Nếu chiên hoặc sốt,
+          rưới phần sốt lên trên. Trang trí với hành lá thái nhỏ và rau thơm tùy
+          thích. Dùng nóng với cơm.
+        </li>
+      </ol>
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

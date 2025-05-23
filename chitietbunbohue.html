@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bún Bò Huế</title>
+
+    <link rel="stylesheet" href="stylemonchinh.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Bún Bò Huế</h1>
+      <p class="intro">
+        Món bánh nhỏ xinh với lớp vỏ mềm dai và nhân kem trứng béo mịn tan chảy
+        trong miệng – tuyệt vời cho bữa trà chiều.
+      </p>
+      <img src="bún bò huế.png" alt="Bún Bò Huế" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>500g bắp bò, 300g chân giò, 200g giò heo</li>
+        <li>2 củ hành tím, 1 củ tỏi, 2 nhánh sả</li>
+        <li>1 gói gia vị bún bò Huế</li>
+        <li>500g bún tươi</li>
+        <li>2 muỗng canh mắm ruốc</li>
+        <li>1 quả chanh, ớt tươi, rau sống (ngò rí, húng quế, giá)</li>
+        <li>Gia vị: muối, đường, hạt nêm</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          Ninh xương (bắp bò, giò heo) trong khoảng 1.5 giờ với hành, tỏi, sả để
+          tạo nước dùng ngọt.
+        </li>
+        <li>Vớt xương ra, lấy thịt bò và giò heo ra để thái miếng vừa ăn.</li>
+        <li>
+          Cho gia vị bún bò Huế vào nồi nước dùng, khuấy đều để gia vị tan hoàn
+          toàn.
+        </li>
+        <li>
+          Chần bún tươi qua nước sôi, sau đó cho bún vào tô, thêm thịt bò, giò
+          heo lên trên.
+        </li>
+        <li>
+          Chan nước dùng nóng vào tô, trang trí với rau sống, ngò rí, ớt tươi và
+          chanh.
+        </li>
+        <li>Thưởng thức bún bò Huế với mắm ruốc và gia vị tùy ý.</li>
+      </ol>
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinh Tố Dưa Hấu</title>
+    <link rel="stylesheet" href="styledouong.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Sinh Tố Dưa Hấu</h1>
+      <p class="intro">
+        Giải nhiệt mùa hè cực đã với ly sinh tố dưa hấu mát lạnh, ngọt dịu và
+        cực kỳ dễ làm!
+      </p>
+      <img src="sinh-to-dua-hau-dau.jpg" alt="Sinh Tố Dưa Hấu" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>300g dưa hấu (bỏ hạt, cắt nhỏ)</li>
+        <li>100ml sữa tươi không đường</li>
+        <li>2 thìa cà phê đường (tùy chọn)</li>
+        <li>Đá viên</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Chuẩn bị:</strong> Dưa hấu rửa sạch, cắt miếng nhỏ và để lạnh
+          nếu thích mát tự nhiên.
+        </li>
+        <li>
+          <strong>Xay sinh tố:</strong> Cho dưa hấu, sữa tươi, đường và đá viên
+          vào máy xay. Xay nhuyễn đến khi mịn.
+        </li>
+        <li>
+          <strong>Thưởng thức:</strong> Đổ ra ly, trang trí thêm lá bạc hà hoặc
+          vài hạt dưa hấu là đẹp mê ly!
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

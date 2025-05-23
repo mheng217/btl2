@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mực Khoanh Chiên Xù Sốt Bơ Tỏi</title>
+    <link rel="stylesheet" href="stylemonkhaivi.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Mực Khoanh Chiên Xù Sốt Bơ Tỏi</h1>
+      <p class="intro">
+        Món bánh nhỏ xinh với lớp vỏ mềm dai và nhân kem trứng béo mịn tan chảy
+        trong miệng – tuyệt vời cho bữa trà chiều.
+      </p>
+      <img src="muc-chien.jpg" alt="Mực Khoanh Chiên Xù Sốt Bơ Tỏi" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>500g mực tươi</li>
+        <li>100g bột chiên xù</li>
+        <li>50g bột mì</li>
+        <li>1 quả trứng gà</li>
+        <li>50g bơ lạt</li>
+        <li>3 tép tỏi</li>
+        <li>Một ít rau mùi hoặc hành lá để trang trí</li>
+        <li>Dầu ăn để chiên</li>
+        <li>Muối, tiêu</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Sơ chế mực:</strong>
+          <ul>
+            <li>Mực làm sạch, cắt khoanh tròn vừa ăn.</li>
+            <li>Ướp mực với một ít muối và tiêu.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Chuẩn bị bột chiên:</strong>
+          <ul>
+            <li>Đánh tan trứng gà trong một bát.</li>
+            <li>Cho bột mì và bột chiên xù ra hai đĩa riêng.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Chiên mực:</strong>
+          <ul>
+            <li>
+              Lăn từng khoanh mực qua bột mì, sau đó nhúng vào trứng gà, cuối
+              cùng lăn đều qua bột chiên xù.
+            </li>
+            <li>
+              Đun nóng dầu ăn trong chảo. Cho mực vào chiên vàng giòn đều các
+              mặt. Vớt ra để ráo dầu.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Làm sốt bơ tỏi:</strong>
+          <ul>
+            <li>Bắc chảo lên bếp, cho bơ lạt vào đun chảy.</li>
+            <li>Phi thơm tỏi băm.</li>
+            <li>
+              Cho mực đã chiên vào chảo, đảo nhanh tay cho sốt bơ tỏi bám đều
+              vào mực.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Hoàn thiện:</strong> Gắp mực ra đĩa, rắc thêm rau mùi hoặc
+          hành lá thái nhỏ để trang trí. Dùng nóng.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

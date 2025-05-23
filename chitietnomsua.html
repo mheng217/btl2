@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nộm Sứa</title>
+    <link rel="stylesheet" href="stylemonkhaivi.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Nộm Sứa</h1>
+      <p class="intro">
+        Món bánh nhỏ xinh với lớp vỏ mềm dai và nhân kem trứng béo mịn tan chảy
+        trong miệng – tuyệt vời cho bữa trà chiều.
+      </p>
+      <img src="nom-sua.png" alt="Nộm Sứa" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>250g sứa</li>
+        <li>1/2 củ hành tây</li>
+        <li>1/2 củ cà rốt</li>
+        <li>1 quả dưa chuột</li>
+        <li>1/2 quả xoài xanh</li>
+        <li>Rau mùi, húng quế</li>
+        <li>1 củ tỏi</li>
+        <li>1 quả ớt</li>
+        <li>3 thìa nước mắm</li>
+        <li>3 thìa nước cốt chanh</li>
+        <li>3 thìa đường</li>
+        <li>Lạc rang, vừng rang</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Sơ chế:</strong>
+          <ul>
+            <li>
+              Nếu dùng sứa tươi: Ngâm sứa trong nước lạnh khoảng 15 phút, sau đó
+              rửa sạch, cắt sợi 3-4cm.
+            </li>
+            <li>Sứa đóng hộp: Tráng qua nước sôi.</li>
+            <li>Cà rốt, dưa chuột, xoài xanh: Gọt vỏ, bào sợi.</li>
+            <li>Hành tây: Thái mỏng, ngâm nước đá để bớt hăng.</li>
+            <li>Rau mùi, húng quế: Rửa sạch, thái nhỏ.</li>
+            <li>Lạc, vừng: Rang vàng.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Pha nước trộn:</strong> Trộn 3 thìa nước mắm, 3 thìa đường, 3
+          thìa nước cốt chanh, tỏi ớt băm.
+        </li>
+        <li>
+          <strong>Trộn nộm:</strong> Cho sứa, cà rốt, xoài xanh, dưa chuột, hành
+          tây vào tô, rưới nước trộn, trộn đều.
+        </li>
+        <li>
+          <strong>Hoàn thành:</strong> Bày ra đĩa, rắc lạc, vừng, rau thơm.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

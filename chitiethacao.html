@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Há Cảo Chay</title>
+    <link rel="stylesheet" href="stylemonchay.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Há Cảo Chay</h1>
+      <p class="intro">
+        Há cảo chay là món ăn thanh đạm, mềm thơm và đầy dinh dưỡng – thích hợp
+        dùng làm món khai vị hoặc bữa sáng nhẹ nhàng.
+      </p>
+      <img src="ha-cao-chay.jpg" alt="Há Cảo Chay" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>Vỏ há cảo (có thể mua sẵn loại chay)</li>
+        <li>100g nấm mèo (mộc nhĩ) băm nhỏ</li>
+        <li>100g nấm hương hoặc nấm đông cô</li>
+        <li>50g củ sắn băm nhỏ</li>
+        <li>50g cà rốt bào sợi</li>
+        <li>1 muỗng nước tương, 1 muỗng dầu mè, tiêu, muối</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Sơ chế:</strong> Ngâm nấm cho mềm, rửa sạch rồi băm nhỏ. Củ
+          sắn, cà rốt bào sợi nhỏ. Trộn tất cả với gia vị vừa ăn.
+        </li>
+        <li>
+          <strong>Gói há cảo:</strong> Múc một muỗng nhân cho vào giữa vỏ, gập
+          đôi và dán mép lại (dùng nước lọc dán cho dính).
+        </li>
+        <li>
+          <strong>Hấp:</strong> Đặt há cảo vào xửng hấp, hấp khoảng 10–12 phút
+          đến khi vỏ trong và chín đều.
+        </li>
+        <li>
+          <strong>Thưởng thức:</strong> Ăn nóng kèm nước tương pha gừng, ớt và
+          chút đường.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

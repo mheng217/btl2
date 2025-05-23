@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiramisu</title>
+    <link rel="stylesheet" href="stylemontrangmieng.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Tiramisu</h1>
+      <p class="intro">
+        Món bánh nhỏ xinh với lớp vỏ mềm dai và nhân kem trứng béo mịn tan chảy
+        trong miệng – tuyệt vời cho bữa trà chiều.
+      </p>
+      <img src="tiramisu.jpg" alt="Tiramisu" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>250g phô mai mascarpone</li>
+        <li>3 quả trứng gà (tách riêng lòng đỏ và lòng trắng)</li>
+        <li>100g đường</li>
+        <li>200ml kem tươi (whipping cream)</li>
+        <li>1 gói bánh ladyfinger (savoiardi)</li>
+        <li>200ml cà phê đen (có thể thêm chút rượu rum hoặc amaretto)</li>
+        <li>Bột cacao để rắc lên mặt</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Đánh trứng:</strong> Đánh lòng đỏ trứng với đường cho đến khi
+          hỗn hợp sáng màu và bông nhẹ.
+        </li>
+        <li>
+          <strong>Thêm mascarpone:</strong> Cho mascarpone vào hỗn hợp lòng đỏ,
+          trộn đều đến khi mịn.
+        </li>
+        <li>
+          <strong>Đánh kem:</strong> Đánh kem tươi đến khi bông mềm rồi trộn nhẹ
+          nhàng vào hỗn hợp trên.
+        </li>
+        <li>
+          <strong>Đánh lòng trắng:</strong> Đánh lòng trắng trứng đến khi bông
+          cứng, sau đó trộn nhẹ vào hỗn hợp kem.
+        </li>
+        <li>
+          <strong>Nhúng bánh:</strong> Nhúng nhanh bánh ladyfinger vào cà phê,
+          xếp vào đáy khuôn.
+        </li>
+        <li>
+          <strong>Xếp lớp:</strong> Đổ một lớp kem lên bánh, sau đó lặp lại lớp
+          bánh và kem cho đến khi hết nguyên liệu.
+        </li>
+        <li>
+          <strong>Làm lạnh:</strong> Để bánh trong tủ lạnh ít nhất 4–6 giờ (tốt
+          nhất để qua đêm).
+        </li>
+        <li>
+          <strong>Trang trí:</strong> Rắc bột cacao lên mặt bánh trước khi dùng.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

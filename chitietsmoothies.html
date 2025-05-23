@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smoothies</title>
+    <link rel="stylesheet" href="styledouong.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Smoothies</h1>
+
+      <p class="intro">
+        Ly sinh tố mát lạnh với hương vị trái cây tươi, giúp bạn bổ sung năng
+        lượng một cách lành mạnh!
+      </p>
+      <img src="smoothie.webp" alt="Smoothies" s />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>1 quả chuối</li>
+        <li>100g dâu tây hoặc xoài</li>
+        <li>200ml sữa tươi hoặc sữa hạnh nhân</li>
+        <li>1 muỗng mật ong hoặc đường (tùy chỉnh)</li>
+        <li>Đá viên</li>
+        <li>Hạt chia hoặc hạt lanh (tùy chọn)</li>
+      </ul>
+
+      <h2>Cách pha chế</h2>
+      <ol>
+        <li>
+          <strong>Chuẩn bị nguyên liệu:</strong> Rửa sạch trái cây, cắt nhỏ để
+          dễ xay.
+        </li>
+        <li>
+          <strong>Xay sinh tố:</strong> Cho tất cả nguyên liệu vào máy xay, xay
+          nhuyễn đến khi mịn.
+        </li>
+        <li>
+          <strong>Điều chỉnh độ ngọt:</strong> Thêm mật ong hoặc đường nếu cần,
+          xay thêm vài giây.
+        </li>
+        <li>
+          <strong>Thưởng thức:</strong> Đổ ra ly, thêm đá hoặc hạt chia, dùng
+          ngay khi còn mát.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

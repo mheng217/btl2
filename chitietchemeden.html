@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chè Mè Đen</title>
+    <link rel="stylesheet" href="stylemontrangmieng.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Chè Mè Đen</h1>
+      <p class="intro">
+        Món bánh nhỏ xinh với lớp vỏ mềm dai và nhân kem trứng béo mịn tan chảy
+        trong miệng – tuyệt vời cho bữa trà chiều.
+      </p>
+      <img src="che-me-den.jpg" alt="Chè Mè Đen" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>100g mè đen</li>
+        <li>100g bột sắn dây (hoặc bột năng)</li>
+        <li>150g đường (điều chỉnh theo khẩu vị)</li>
+        <li>1 lít nước</li>
+        <li>Một nhánh gừng nhỏ</li>
+        <li>Nước cốt dừa (tùy chọn)</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Xay mè đen:</strong> Mè đen rang thơm, để nguội rồi cho vào
+          máy xay sinh tố xay nhuyễn. Nếu không có máy xay, bạn có thể dùng cối
+          giã.
+        </li>
+        <li>
+          <strong>Hòa bột sắn dây:</strong> Hòa tan bột sắn dây với khoảng 200ml
+          nước lạnh, khuấy đều cho bột tan hết.
+        </li>
+        <li>
+          <strong>Nấu chè:</strong>
+          <ul>
+            <li>
+              Cho phần nước còn lại (800ml) vào nồi, thêm đường và gừng thái lát
+              mỏng. Đun sôi cho đường tan hết và gừng thơm.
+            </li>
+            <li>
+              Từ từ đổ phần mè đen đã xay vào nồi nước đường, khuấy đều để mè
+              không bị vón cục. Đun nhỏ lửa.
+            </li>
+            <li>
+              Khi nồi chè sôi nhẹ, từ từ đổ nước bột sắn dây vào, vừa đổ vừa
+              khuấy đều tay cho chè sánh lại.
+            </li>
+            <li>
+              Đun thêm khoảng 2-3 phút cho chè chín hoàn toàn và đạt độ sánh
+              mong muốn. Tắt bếp.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Hoàn thiện:</strong> Múc chè mè đen ra bát. Có thể thêm nước
+          cốt dừa lên trên để tăng thêm hương vị béo ngậy (tùy chọn). Dùng nóng
+          hoặc lạnh đều ngon.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

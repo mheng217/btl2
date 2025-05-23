@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salad Nga</title>
+    <link rel="stylesheet" href="stylemonkhaivi.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Salad Nga</h1>
+      <p class="intro">
+        Món bánh nhỏ xinh với lớp vỏ mềm dai và nhân kem trứng béo mịn tan chảy
+        trong miệng – tuyệt vời cho bữa trà chiều.
+      </p>
+      <img src="salad-nga.jpg" alt="Salad Nga" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>2 củ khoai tây</li>
+        <li>2 củ cà rốt</li>
+        <li>150g đậu Hà Lan (tươi hoặc đông lạnh)</li>
+        <li>2 quả trứng gà</li>
+        <li>150g giăm bông hoặc thịt nguội</li>
+        <li>1/2 củ hành tây (tùy chọn)</li>
+        <li>Sốt mayonnaise</li>
+        <li>Muối, tiêu</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Sơ chế nguyên liệu:</strong>
+          <ul>
+            <li>Khoai tây, cà rốt luộc chín, để nguội, cắt hạt lựu.</li>
+            <li>Trứng gà luộc chín, bóc vỏ, cắt hạt lựu.</li>
+            <li>Đậu Hà Lan luộc chín tới (nếu dùng đậu tươi).</li>
+            <li>Giăm bông hoặc thịt nguội cắt hạt lựu.</li>
+            <li>Hành tây bóc vỏ, thái hạt lựu nhỏ (nếu dùng).</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Trộn salad:</strong> Cho khoai tây, cà rốt, đậu Hà Lan, trứng
+          gà, giăm bông (hoặc thịt nguội), hành tây (nếu dùng) vào tô lớn.
+        </li>
+        <li>
+          <strong>Trộn sốt:</strong> Thêm sốt mayonnaise vừa đủ vào tô, trộn đều
+          cho các nguyên liệu quyện vào nhau. Nêm thêm muối, tiêu cho vừa khẩu
+          vị.
+        </li>
+        <li>
+          <strong>Hoàn thiện:</strong> Bày salad ra đĩa. Có thể trang trí thêm
+          với rau thơm hoặc một ít đậu Hà Lan. Dùng lạnh sẽ ngon hơn.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

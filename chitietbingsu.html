@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingsu Hàn Quốc</title>
+    <link rel="stylesheet" href="stylemontrangmieng.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Bingsu Hàn Quốc</h1>
+      <p class="intro">
+        Món tráng miệng mát lạnh "đỉnh của chóp" đến từ Hàn Quốc – thơm ngon,
+        đẹp mắt và cực chill!
+      </p>
+      <img src="bingsu.jpg" alt="Bingsu Hàn Quốc" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>Đá bào mịn (có thể dùng máy xay)</li>
+        <li>Sữa đặc hoặc sữa tươi có đường</li>
+        <li>Hoa quả tươi (xoài, dâu, kiwi,...)</li>
+        <li>Thạch, ngũ cốc, kem vani (tùy chọn)</li>
+        <li>Sốt socola hoặc sốt trái cây</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Chuẩn bị đá:</strong> Xay đá thật mịn rồi cho vào tô/ly lớn.
+        </li>
+        <li>
+          <strong>Trang trí:</strong> Rưới sữa đặc lên đá, xếp hoa quả, thêm
+          kem, thạch hoặc sốt theo sở thích.
+        </li>
+        <li>
+          <strong>Thưởng thức:</strong> Ăn ngay để cảm nhận vị mát lạnh tan chảy
+          cùng topping siêu hấp dẫn!
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

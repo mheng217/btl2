@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Súp Nấm Rong Biển Chay</title>
+    <link rel="stylesheet" href="stylemonchay.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Súp Nấm Rong Biển Chay</h1>
+      <p class="intro">
+        Món súp thanh đạm kết hợp giữa vị ngọt của nấm và vị umami tự nhiên từ
+        rong biển, thích hợp cho những bữa ăn nhẹ nhàng và lành mạnh.
+      </p>
+      <img src="súp nấm rong biển.png" alt="Súp Nấm Rong Biển Chay" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>50g nấm hương tươi hoặc khô</li>
+        <li>10g rong biển khô (loại wakame hoặc kombu)</li>
+        <li>1 lít nước lọc</li>
+        <li>1 thìa cà phê hạt nêm chay</li>
+        <li>1/2 thìa cà phê muối</li>
+        <li>Hành boa rô (tùy chọn)</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Sơ chế:</strong> Ngâm rong biển và nấm trong nước ấm cho nở
+          mềm, cắt nhỏ vừa ăn.
+        </li>
+        <li>
+          <strong>Nấu súp:</strong> Đun sôi nước, cho nấm vào nấu khoảng 10
+          phút, sau đó thêm rong biển và nêm gia vị.
+        </li>
+        <li>
+          <strong>Hoàn thành:</strong> Nấu thêm 5 phút rồi tắt bếp. Rắc thêm
+          hành boa rô nếu thích và dùng nóng.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

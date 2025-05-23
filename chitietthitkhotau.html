@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thịt Kho Tàu</title>
+    <link rel="stylesheet" href="stylemonchinh.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Thịt Kho Tàu</h1>
+      <p class="intro">
+        Món bánh nhỏ xinh với lớp vỏ mềm dai và nhân kem trứng béo mịn tan chảy
+        trong miệng – tuyệt vời cho bữa trà chiều.
+      </p>
+      <img src="thit-kho-tau.webp" alt="Thịt Kho Tàu" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>500g thịt ba chỉ (hoặc thịt chân giò)</li>
+        <li>4 quả trứng vịt (hoặc trứng gà)</li>
+        <li>1 củ hành tím</li>
+        <li>2 tép tỏi</li>
+        <li>Nước mắm ngon</li>
+        <li>Nước màu (nước hàng)</li>
+        <li>Đường</li>
+        <li>Tiêu xay</li>
+        <li>Nước dừa tươi (tùy chọn)</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Sơ chế thịt:</strong> Rửa sạch thịt, cắt miếng vuông vừa ăn.
+          Chần sơ qua nước sôi để loại bỏ bọt bẩn.
+        </li>
+        <li>
+          <strong>Ướp thịt:</strong> Ướp thịt với hành tím băm, tỏi băm, khoảng
+          2-3 muỗng canh nước mắm, 1-2 muỗng canh đường, 1 muỗng canh nước màu,
+          và một ít tiêu xay. Ướp ít nhất 30 phút cho thịt ngấm gia vị.
+        </li>
+        <li>
+          <strong>Luộc trứng:</strong> Luộc chín trứng, bóc vỏ. Có thể chiên sơ
+          qua cho trứng có màu vàng đẹp hơn.
+        </li>
+        <li>
+          <strong>Kho thịt:</strong>
+          <ul>
+            <li>Cho thịt đã ướp vào nồi, xào sơ cho thịt săn lại.</li>
+            <li>
+              Nếu dùng nước dừa, đổ nước dừa vào xâm xấp mặt thịt. Nếu không
+              dùng nước dừa, có thể dùng nước lọc.
+            </li>
+            <li>
+              Đun sôi, sau đó hạ nhỏ lửa, kho liu riu cho đến khi thịt mềm và
+              nước sánh lại, có màu cánh gián đẹp mắt. Trong quá trình kho, có
+              thể nêm nếm lại gia vị cho vừa ăn.
+            </li>
+            <li>
+              Cho trứng đã luộc vào kho cùng khoảng 15-20 phút trước khi tắt bếp
+              để trứng ngấm màu và gia vị.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Hoàn thiện:</strong> Gắp thịt và trứng ra đĩa. Rưới phần nước
+          kho lên trên. Có thể trang trí thêm với hành lá hoặc ớt tỉa. Dùng nóng
+          với cơm trắng.
+        </li>
+      </ol>
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

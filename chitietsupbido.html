@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Súp Bí Đỏ</title>
+
+    <link rel="stylesheet" href="stylemonkhaivi.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Súp Bí Đỏ</h1>
+      <p class="intro">
+        Món bánh nhỏ xinh với lớp vỏ mềm dai và nhân kem trứng béo mịn tan chảy
+        trong miệng – tuyệt vời cho bữa trà chiều.
+      </p>
+      <img src="súp bí đỏ.jpg" alt="Súp Bí Đỏ" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>500g bí đỏ (bí ngô)</li>
+        <li>1 củ hành tây</li>
+        <li>500ml sữa tươi không đường hoặc kem tươi</li>
+        <li>30g bơ lạt</li>
+        <li>Muối, tiêu, nước dùng gà hoặc rau củ (khoảng 400ml)</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Chuẩn bị:</strong> Gọt vỏ, cắt nhỏ bí đỏ và hành tây. Chuẩn bị
+          sẵn nước dùng.
+        </li>
+        <li>
+          <strong>Xào và nấu:</strong> Phi hành tây với bơ cho thơm, cho bí đỏ
+          vào xào sơ. Thêm nước dùng và nấu mềm.
+        </li>
+        <li>
+          <strong>Xay và hoàn thiện:</strong> Xay nhuyễn hỗn hợp, đổ lại nồi,
+          thêm sữa, nêm nếm lại và đun nóng nhẹ là xong.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

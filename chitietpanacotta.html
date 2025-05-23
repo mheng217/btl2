@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panna Cotta</title>
+    <link rel="stylesheet" href="stylemontrangmieng.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Panna Cotta</h1>
+      <p class="intro">
+        Món bánh nhỏ xinh với lớp vỏ mềm dai và nhân kem trứng béo mịn tan chảy
+        trong miệng – tuyệt vời cho bữa trà chiều.
+      </p>
+      <img src="panna cotta.webp" alt="Panna Cotta" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>300ml kem tươi (whipping cream)</li>
+        <li>100ml sữa tươi</li>
+        <li>60g đường</li>
+        <li>1 thìa cà phê tinh chất vani</li>
+        <li>5g gelatin (hoặc 2 lá gelatin)</li>
+        <li>Nước lạnh để ngâm gelatin</li>
+        <li>Sốt dâu, việt quất hoặc trái cây tùy thích để rưới lên mặt</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Ngâm gelatin:</strong> Ngâm gelatin với nước lạnh khoảng 10
+          phút cho mềm.
+        </li>
+        <li>
+          <strong>Đun hỗn hợp kem:</strong> Đun nhẹ kem tươi, sữa và đường trên
+          lửa nhỏ cho đến khi gần sôi thì tắt bếp. Cho gelatin đã ngâm vào khuấy
+          đều cho tan hoàn toàn, sau đó thêm vani.
+        </li>
+        <li>
+          <strong>Đổ khuôn & làm lạnh:</strong> Rót hỗn hợp vào khuôn, để nguội
+          rồi cho vào tủ lạnh ít nhất 4 tiếng cho đông lại. Khi ăn có thể rưới
+          sốt trái cây lên mặt.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

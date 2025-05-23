@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gỏi Cuốn</title>
+
+    <link rel="stylesheet" href="stylemonkhaivi.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Gỏi Cuốn</h1>
+      <p class="intro">
+        Món bánh nhỏ xinh với lớp vỏ mềm dai và nhân kem trứng béo mịn tan chảy
+        trong miệng – tuyệt vời cho bữa trà chiều.
+      </p>
+      <img src="gỏi cuốn.jpg" alt="Gỏi Cuốn" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>Bánh tráng</li>
+        <li>Bún tươi</li>
+        <li>Tôm luộc, thịt ba chỉ luộc cắt lát</li>
+        <li>Rau sống: xà lách, húng quế, tía tô...</li>
+        <li>Hẹ, dưa leo (tùy chọn)</li>
+        <li>Nước chấm: tương đậu phộng hoặc nước mắm chua ngọt</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Sơ chế:</strong> Luộc tôm, thịt và cắt lát mỏng. Chuẩn bị rau
+          sống, bún và các nguyên liệu khác.
+        </li>
+        <li>
+          <strong>Cuốn:</strong> Nhúng bánh tráng vào nước cho mềm, xếp lần lượt
+          rau, bún, thịt, tôm và cuốn chặt tay.
+        </li>
+        <li>
+          <strong>Thưởng thức:</strong> Gỏi cuốn ăn kèm tương đậu phộng hoặc
+          nước mắm chua ngọt, rất thanh mát và nhẹ bụng.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

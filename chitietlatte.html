@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latte</title>
+    <link rel="stylesheet" href="styledouong.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Latte</h1>
+      <p class="intro">
+        Một ly Latte ấm áp với lớp bọt sữa mịn màng, mang đến hương vị thơm ngon
+        và tinh tế.
+      </p>
+      <img src="latte.jpeg" alt="Ly Latte thơm ngon" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>1 ly espresso (hoặc 50ml cà phê pha đậm)</li>
+        <li>200ml sữa tươi</li>
+        <li>1 muỗng cà phê đường (tùy chỉnh)</li>
+        <li>Bột cacao hoặc bột quế để trang trí (tùy chọn)</li>
+      </ul>
+
+      <h2>Cách pha chế</h2>
+      <ol>
+        <li>
+          <strong>Chuẩn bị cà phê:</strong> Pha một ly espresso hoặc cà phê đậm.
+        </li>
+        <li>
+          <strong>Hấp sữa:</strong> Đun nóng sữa đến khoảng 65°C, rồi đánh bọt
+          sữa bằng máy đánh bọt hoặc tay.
+        </li>
+        <li>
+          <strong>Kết hợp:</strong> Đổ từ từ sữa nóng vào ly cà phê, giữ lớp bọt
+          sữa trên mặt.
+        </li>
+        <li>
+          <strong>Hoàn thiện:</strong> Rắc bột cacao hoặc bột quế lên trên để
+          trang trí. Thưởng thức ngay khi còn nóng.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+    </section>
+
+    <script>
+      function addToFavorites() {
+        alert("Đã thêm Latte vào mục yêu thích!");
+      }
+    </script>
+  </body>
+</html>

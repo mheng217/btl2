@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bò Viên Chay Xào Thập Cẩm</title>
+    <link rel="stylesheet" href="stylemonchay.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Bò Viên Chay Xào Thập Cẩm</h1>
+      <p class="intro">
+        Món xào ngon miệng, màu sắc bắt mắt, kết hợp giữa bò viên chay dai ngon
+        và rau củ tươi mát, cực kỳ hấp dẫn trong mỗi bữa cơm.
+      </p>
+      <img src="bò viên chay.jpg" alt="Bò Viên Chay Xào Thập Cẩm" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>200g bò viên chay (mua sẵn hoặc tự làm)</li>
+        <li>1/2 bông súp lơ xanh</li>
+        <li>1/2 củ cà rốt</li>
+        <li>1/2 quả ớt chuông đỏ</li>
+        <li>1/2 quả ớt chuông vàng</li>
+        <li>2 tép tỏi băm</li>
+        <li>Gia vị: nước tương, hạt nêm chay, đường, tiêu, dầu ăn</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Sơ chế:</strong> Rau củ rửa sạch, cắt miếng vừa ăn. Bò viên
+          chay có thể trụng sơ qua nước nóng cho mềm.
+        </li>
+        <li>
+          <strong>Xào rau củ:</strong> Phi tỏi thơm, cho cà rốt và súp lơ vào
+          xào trước. Sau vài phút, cho ớt chuông vào xào chung.
+        </li>
+        <li>
+          <strong>Thêm bò viên:</strong> Cho bò viên vào xào cùng, nêm nước
+          tương, hạt nêm chay, tí đường và tiêu vừa ăn.
+        </li>
+        <li>
+          <strong>Hoàn thiện:</strong> Xào thêm vài phút cho mọi thứ chín đều,
+          thấm gia vị rồi tắt bếp. Dọn ra đĩa và thưởng thức.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

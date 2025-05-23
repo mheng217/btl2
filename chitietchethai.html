@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chè Thái</title>
+    <link rel="stylesheet" href="stylemontrangmieng.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Chè Thái</h1>
+      <p class="intro">
+        Món bánh nhỏ xinh với lớp vỏ mềm dai và nhân kem trứng béo mịn tan chảy
+        trong miệng – tuyệt vời cho bữa trà chiều.
+      </p>
+      <img src="che-thai.jpg" alt="Chè Thái" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>300g mít chín</li>
+        <li>200g nhãn hoặc vải thiều</li>
+        <li>200g thạch rau câu (nhiều màu)</li>
+        <li>100g hạt lựu</li>
+        <li>150ml nước cốt dừa</li>
+        <li>100g sữa đặc</li>
+        <li>200g đá bào</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Sơ chế nguyên liệu:</strong>
+          <ul>
+            <li>Mít cắt sợi vừa ăn.</li>
+            <li>Nhãn/vải bóc vỏ, bỏ hạt.</li>
+            <li>Thạch rau câu cắt nhỏ.</li>
+            <li>Hạt lựu luộc sơ rồi ngâm vào nước đường.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Pha nước cốt:</strong> Trộn nước cốt dừa với sữa đặc, khuấy
+          đều để có vị béo thơm.
+        </li>
+        <li>
+          <strong>Trình bày:</strong> Cho các nguyên liệu vào ly hoặc bát lớn,
+          đổ nước cốt dừa lên trên, thêm đá bào và thưởng thức lạnh.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

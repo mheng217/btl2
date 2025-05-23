@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trà Đào Cam Sả</title>
+    <link rel="stylesheet" href="styledouong.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Trà Đào Cam Sả</h1>
+      <p class="intro">
+        Sự kết hợp hoàn hảo giữa vị ngọt thanh của đào, chua nhẹ từ cam và mùi
+        thơm đặc trưng của sả – một món giải nhiệt siêu hot!
+      </p>
+      <img src="tra-dao-cam-sa.jpg" alt="Trà Đào Cam Sả" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>1 túi trà đen (hoặc 3g trà đen khô)</li>
+        <li>1 nhánh sả đập dập</li>
+        <li>1 lát cam tươi</li>
+        <li>20ml syrup đào (hoặc nước đào hộp)</li>
+        <li>2–3 miếng đào ngâm</li>
+        <li>Đường hoặc mật ong tùy khẩu vị</li>
+        <li>Đá viên</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Ủ trà với sả:</strong> Ngâm túi trà và sả trong 150ml nước sôi
+          khoảng 5 phút rồi vớt ra.
+        </li>
+        <li>
+          <strong>Pha chế:</strong> Cho trà sả, syrup đào, đường (hoặc mật ong)
+          vào bình lắc cùng đá viên. Thêm vài lát cam vào.
+        </li>
+        <li>
+          <strong>Hoàn thành:</strong> Rót ra ly, thêm miếng đào ngâm và trang
+          trí cam tươi nếu thích.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

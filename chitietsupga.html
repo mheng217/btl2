@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Súp Gà Nấm</title>
+
+    <link rel="stylesheet" href="stylemonkhaivi.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Súp Gà Nấm</h1>
+      <p class="intro">
+        Món bánh nhỏ xinh với lớp vỏ mềm dai và nhân kem trứng béo mịn tan chảy
+        trong miệng – tuyệt vời cho bữa trà chiều.
+      </p>
+      <img src="sup-ga-nam.jpg" alt="Súp Gà Nấm" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>Ức gà luộc xé nhỏ</li>
+        <li>Nấm hương hoặc nấm rơm thái lát</li>
+        <li>Hành tím băm</li>
+        <li>Nước luộc gà</li>
+        <li>Bột năng (hoặc bột bắp) để tạo độ sánh</li>
+        <li>Gia vị: muối, tiêu, nước mắm</li>
+        <li>Ngò rí, hành lá thái nhỏ để trang trí</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Sơ chế nguyên liệu:</strong> Luộc gà chín, xé sợi. Ngâm nấm
+          cho mềm, rửa sạch và cắt lát.
+        </li>
+        <li>
+          <strong>Nấu súp:</strong> Phi thơm hành tím, cho nấm vào xào nhẹ. Đổ
+          nước luộc gà vào, nêm nếm gia vị vừa ăn. Cho gà xé vào nồi.
+        </li>
+        <li>
+          <strong>Hoàn thiện:</strong> Pha bột năng với nước, cho từ từ vào nồi
+          khuấy đều đến khi súp sánh. Tắt bếp, rắc hành ngò lên trên và dùng
+          nóng.
+        </li>
+      </ol>
+
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

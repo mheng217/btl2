@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Georgia", serif;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+}
+/* Header styling */
+header {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Distribute items with space between them */
+  align-items: center; /* Vertically align items in the center */
+  padding: 10px 40px; /* Padding around the header */
+  background-color: #fff; /* White background */
+  position: relative; /* Needed for absolute positioning of menu on mobile */
+  border-bottom: 1px solid #ccc; /* Bottom border */
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+/* Navigation menu styling */
+nav {
+  display: flex; /* Use flexbox for menu items */
+  gap: 15px; /* Space between menu items */
+}
+nav a {
+  text-decoration: none; /* Remove underline from links */
+  color: #000; /* Black text color */
+  padding: 8px 12px; /* Padding for menu items */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+nav a:hover {
+  background-color: #e0e0e0; /* Light gray background on hover */
+  border-radius: 4px; /* Slightly rounded corners on hover */
+}
+
+/* Search box styling */
+.search-box {
+  position: relative; /* Needed for absolute positioning of the icon */
+  flex-grow: 0; /* Prevent it from growing unnecessarily */
+  flex-shrink: 1; /* Allow it to shrink */
+  min-width: 150px; /* Minimum width to ensure visibility */
+}
+
+.search-box input {
+  padding: 7px 35px 7px 15px; /* Padding for input, extra space on right for icon */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 20px; /* Rounded corners for the input field */
+  outline: none; /* Remove outline on focus */
+  width: 100%; /* Take full width of its parent .search-box */
+  max-width: 220px; /* Limit maximum width on larger screens to make it compact */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.search-box i {
+  position: absolute; /* Position icon absolutely within the search box */
+  right: 12px; /* Distance from the right edge */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+  color: #999; /* Gray icon color */
+  pointer-events: none; /* Allow clicks to pass through the icon to the input */
+}
+
+/* Hide the checkbox by default */
+#check {
+  display: none;
+}
+
+/* Hamburger icon styling (initially hidden, shown on mobile/tablet) */
+.hamburger {
+  display: none; /* Hide by default */
+  font-size: 24px; /* Icon size */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Menu styling for desktop (flex display) */
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
+/* Redundant rule, but kept for consistency with original code */
+.menu a:hover {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+/* When the checkbox is checked, display the menu (for mobile/tablet) */
+#check:checked ~ .menu {
+  display: flex;
+}
+
+/* Responsive Styles */
+
+/* Desktop (>= 992px): Full menu visible */
+@media (min-width: 992px) {
+  .hamburger {
+    display: none; /* Hide hamburger */
+  }
+  .menu {
+    display: flex; /* Show full menu */
+    flex-direction: row; /* Row layout */
+    position: static; /* Reset position */
+    width: auto; /* Reset width */
+    box-shadow: none; /* Remove shadow */
+  }
+  .menu a {
+    padding: 8px 12px; /* Standard padding */
+    font-size: 1em; /* Standard font size */
+  }
+  header {
+    padding: 10px 40px;
+  }
+  .search-box {
+    max-width: 220px; /* Standard search box width */
+  }
+}
+
+@media (max-width: 1024px) {
+  nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .dish-carousel {
+    grid-template-columns: 3;
+  }
+  .hamburger {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .dish-carousel {
+    grid-template-columns: 2;
+  }
+  .hamburger {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: white;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+.content-section {
+  min-height: 100vh;
+  background: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.container {
+  max-width: 800px;
+}
+.topSection_title {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-align: center;
+  color: #242e52;
+}
+.menu-section {
+  padding: 80px 20px;
+  background: #fff6ec;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: #242e52;
+}
+
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 0 40px;
+}
+
+.dish-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.dish-card:hover {
+  transform: scale(1.03);
+}
+
+.dish-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.dish-card h3 {
+  font-size: 24px;
+  margin: 16px 0 8px;
+  color: #242e52;
+}
+
+.dish-card p {
+  font-size: 16px;
+  padding: 0 20px 20px;
+  color: #555;
+}
+
+.detail-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #e67e22;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.detail-link:hover {
+  text-decoration: underline;
+}
+.dish-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.dish-card {
+  flex: 0 0 auto;
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  padding: 10px;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.dish-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.dish-card h3 {
+  margin: 10px 0 5px;
+}
+.menu-category {
+  margin-bottom: 40px;
+}
+
+.category-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #242e52;
+  margin-bottom: 20px;
+}
+
+.dish-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.dish-card {
+  flex: 0 0 auto;
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  padding: 10px;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.dish-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.dish-card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dish-link {
+  text-decoration: none;
+}
+
+.dish-link:hover h3 {
+  text-decoration: none;
+  color: red;
+}
+
+.dish-carousel {
+  cursor: grab;
+  scroll-behavior: smooth;
+  user-select: none; /* <- thêm dòng này để fix vụ xanh xanh */
+}
+
+.dish-carousel:active {
+  cursor: grabbing;
+}
+
+.dish-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+}
+
+.dish-carousel::-webkit-scrollbar {
+  display: none;
+}
+.dish-carousel {
+  cursor: grab;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+.dish-carousel:active {
+  cursor: grabbing;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}

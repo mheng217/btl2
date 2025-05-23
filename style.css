@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Georgia", serif;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+}
+
+#loading-screen {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1.5s ease, visibility 1.5s ease;
+}
+#loading-screen.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loading-content {
+  text-align: center;
+}
+
+.loading-img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.loading-text {
+  font-size: 48px;
+  color: #1e2346;
+  letter-spacing: 2px;
+  font-family: "Playfair Display", serif;
+}
+
+.dot {
+  opacity: 0;
+  animation: blink 1.5s infinite;
+}
+.dot1 {
+  animation-delay: 0s;
+}
+.dot2 {
+  animation-delay: 0.3s;
+}
+.dot3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+#main-content {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+#main-content.fade-in {
+  opacity: 1;
+}
+.video-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-section video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.2);
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 40px;
+  z-index: 1000;
+}
+
+.headerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo_link {
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: white;
+  font-size: 30px;
+}
+
+.textSub {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.headerNav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: white;
+}
+
+.headerNav_link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+
+.headerNav_link .icon {
+  font-size: 16px;
+}
+
+.lang {
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.menuToggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 24px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  transition: border-color 0.3s ease;
+}
+
+.menuToggle span {
+  position: absolute;
+  width: 16px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.menuToggle span:nth-child(1) {
+  top: 9px;
+}
+.menuToggle span:nth-child(2) {
+  top: 14px;
+}
+.menuToggle span:nth-child(3) {
+  top: 19px;
+}
+
+.menuToggle.open span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+.menuToggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.menuToggle.open span:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+.mobileMenu {
+  background: white;
+  color: #242e52;
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobileMenu ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.mobileMenu li {
+  margin-bottom: 16px;
+}
+
+.mobileMenu a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #242e52;
+}
+
+/* Khi mở */
+.mobileMenu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+  .mobileMenu {
+    width: 240px;
+    left: auto;
+    right: 40px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.button-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  width: 1000px;
+  margin: 30px auto;
+  border: 3px solid navy;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 128, 0.3);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.bg-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.bg-slide.active {
+  opacity: 1;
+}
+
+.background-slideshow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 50, 0.3);
+  z-index: 1;
+}
+
+/* Nút nằm trên ảnh */
+.button-wrapper button {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  color: navy;
+  font-size: 1.5rem;
+  padding: 12px 30px;
+  border: 3px solid navy;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 128, 0.3);
+  width: 300px;
+  min-width: 140px;
+  height: 100px;
+  text-align: center;
+}
+
+.button-wrapper button:hover {
+  background-color: navy;
+  color: white;
+  transform: scale(1.1);
+}
+
+.button-wrapper button:active {
+  transform: scale(0.95);
+}
+.flipbook {
+  width: 1000px;
+  height: 600px;
+}
+
+.flipbook .hard {
+  background: #242e52 !important;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+
+.flipbook .hard small {
+  font-style: italic;
+  font-weight: lighter;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.flipbook .page {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.page img {
+  width: 70%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.flipbook .page small {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: black;
+}

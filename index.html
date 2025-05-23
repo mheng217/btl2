@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="overflow: hidden">
+    <div id="loading-screen">
+      <div class="loading-content">
+        <img src="cook.gif" alt="Mascot" class="loading-img" />
+        <h1 class="loading-text">
+          Loading<span class="dot dot1">.</span><span class="dot dot2">.</span
+          ><span class="dot dot3">.</span>
+        </h1>
+      </div>
+    </div>
+
+    <section class="video-section">
+      <video autoplay muted loop playsinline>
+        <source src="bgvd.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <header class="header">
+        <div class="headerInner">
+          <h1 class="headerLogo">
+            <a href="index.html" class="headerLogo_link">
+              <span class="textLogo">Skibidi 4P’S</span>
+              <span class="textSub">VIETNAM</span>
+            </a>
+          </h1>
+
+          <nav class="headerNav">
+            <a
+              class="headerNav_link"
+              href="https://booking.pizza4ps.com/"
+              target="_blank"
+            >
+              <span class="icon">🖥</span>
+              <span>Đặt bàn</span>
+            </a>
+            <a
+              class="headerNav_link"
+              href="https://delivery.pizza4ps.com/"
+              target="_blank"
+            >
+              <span class="icon">🛒</span>
+              <span>Giao Hàng</span>
+            </a>
+            <a class="headerNav_link" href="/vn/career/">
+              <span class="icon">📱</span>
+              <span>Tuyển dụng</span>
+            </a>
+
+            <div class="menuToggle js-menuToggle">
+              <span></span><span></span><span></span>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <nav class="mobileMenu" id="mobileMenu">
+        <ul>
+          <li>
+            <a href="https://booking.pizza4ps.com/" target="_blank">Đặt bàn</a>
+          </li>
+          <li>
+            <a href="https://delivery.pizza4ps.com/" target="_blank"
+              >Giao hàng</a
+            >
+          </li>
+          <li><a href="/vn/career/">Tuyển dụng</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+        </ul>
+      </nav>
+      <div class="video-overlay">
+        <h1>Welcome to Skibidi 4P's</h1>
+      </div>
+    </section>
+
+ <section class="content-section">
+      <div class="flipbook">
+        <div class="hard">
+          My Skibidi 4P's <small>Nhóm mạnh nhất cái lớp này</small>
+        </div>
+        <div class="hard"></div>
+        <div>
+          <small>skibidi</small>
+          <small>Gotta Catch 'Em All</small>
+        </div>
+        <div>
+          <img src="images/img-1.png" alt="" />
+          <small>quỳ</small>
+        </div>
+        <div>
+          <img src="images/img-2.png" alt="" />
+          <small>mẹ</small>
+        </div>
+        <div>
+          <img src="images/img-3.png" alt="" />
+          <small>xuống</small>
+        </div>
+        <div>
+          <img src="images/img-4.png" alt="" />
+          <small> Mew </small>
+        </div>
+        <div>
+          <img src="images/img-5.png" alt="" />
+          <small> Darkrai </small>
+        </div>
+        <div class="hard"></div>
+        <div class="hard">
+          Thank You <small>Nhóm mạnh nhất cái lớp này</small>
+        </div>
+      </div>
+
+      <script src="jquery.js"></script>
+      <script src="turn.js"></script>
+      <script>
+        $(".flipbook").turn();
+      </script>
+    </section>
+
+
+<div class="button-wrapper">
+  <div class="background-slideshow">
+    <img src="bún chả.jpg" class="bg-slide active" />
+    <img src="phở bò.jpeg" class="bg-slide" />
+    <img src="trà trái cây.png" class="bg-slide" />
+    <img src="bánh su kem.webp" class="bg-slide" />
+    <img src="bruschetta.jpg" class="bg-slide" />
+    <img src="bánh mousse.jpg" class="bg-slide" />
+    <img src="súp bí đỏ.jpg" class="bg-slide" />
+    <img src="tra-dao-cam-sa.jpg" class="bg-slide" />
+    <img src="sinh-to-dua-hau-dau.jpg" class="bg-slide" />
+    <img src="bánh flan.jpg" class="bg-slide" />
+  </div>
+  <button onclick="window.location.href='index2.html'">View Menu</button>
+</div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

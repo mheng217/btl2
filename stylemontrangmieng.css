@@ -1,0 +1,213 @@
+/* CSS tráng miệng */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Georgia", serif;
+  background-image: radial-gradient(
+      circle at 20% 20%,
+      #fbc2eb 0%,
+      #f9c5d1 30%,
+      #fce1e7 60%,
+      #fbc2eb 100%
+    ),
+    url("https://www.transparenttextures.com/patterns/white-diamond.png");
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+}
+.recipe-detail {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fffdf9;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  color: #333;
+}
+
+.recipe-detail h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #d16ba5;
+  text-align: center;
+}
+
+.recipe-detail p {
+  font-style: italic;
+  font-size: 18px;
+  color: #8e44ad; /* Changed color to match đồ uống */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recipe-detail img {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  display: block; /* Make the image a block-level element */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+}
+
+.recipe-detail h2 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+  color: #722872;
+}
+
+.recipe-detail ul,
+.recipe-detail ol {
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+.recipe-detail a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #d16ba5;
+  font-weight: bold;
+}
+
+.recipe-detail a:hover {
+  text-decoration: underline;
+}
+
+.favorite-button {
+  margin-top: 20px;
+  background: #d16ba5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.favorite-button:hover {
+  background: #a84a87;
+}
+
+/* Comments and Ratings Section */
+.comments-section {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+
+.comments-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #242e52;
+}
+
+.rating-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  direction: rtl; /* For right-to-left stars */
+}
+
+.rating-input label {
+  font-size: 2.5em; /* Larger stars */
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 0 5px; /* Spacing between stars */
+}
+
+.rating-input input[type="radio"] {
+  display: none;
+}
+
+.rating-input input[type="radio"]:checked ~ label {
+  color: #ffd700; /* Gold color for selected stars */
+}
+
+.rating-input label:hover,
+.rating-input label:hover ~ label {
+  color: #ffd700;
+}
+
+.comment-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  min-height: 100px;
+  resize: vertical;
+  font-family: "Open Sans", sans-serif;
+}
+
+.comment-form button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
+}
+
+.comment-form button:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(46, 204, 113, 0.4);
+}
+
+.comment-form button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(46, 204, 113, 0.3);
+}
+
+.comments-list {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.comment-item {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.comment-item strong {
+  color: #242e52;
+  font-size: 1.1em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.comment-item .rating-display {
+  color: #ffd700;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.comment-item p {
+  color: #666;
+  font-size: 0.95em;
+}

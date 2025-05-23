@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bún Riêu Cua</title>
+    <link rel="stylesheet" href="stylemonchinh.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="recipe-detail">
+      <h1>Bún Riêu Cua</h1>
+      <p class="intro">
+        Món bánh nhỏ xinh với lớp vỏ mềm dai và nhân kem trứng béo mịn tan chảy
+        trong miệng – tuyệt vời cho bữa trà chiều.
+      </p>
+      <img src="bun-rieu-cua.jpeg" alt="Bún Riêu Cua" />
+
+      <h2>Nguyên liệu</h2>
+      <ul>
+        <li>500g cua đồng</li>
+        <li>500g bún tươi</li>
+        <li>200g đậu phụ</li>
+        <li>2-3 quả cà chua</li>
+        <li>50g mỡ heo (tùy chọn)</li>
+        <li>Hành tím</li>
+        <li>Hành lá</li>
+        <li>
+          Rau sống ăn kèm (xà lách, tía tô, kinh giới, giá đỗ, rau chuối...)
+        </li>
+        <li>Mắm tôm</li>
+        <li>Me chua (hoặc sấu)</li>
+        <li>Dầu ăn</li>
+        <li>Gia vị: muối, đường, bột ngọt (tùy chọn), tiêu xay</li>
+      </ul>
+
+      <h2>Cách làm</h2>
+      <ol>
+        <li>
+          <strong>Sơ chế cua:</strong> Cua rửa sạch, tách mai, khêu gạch để
+          riêng. Giã nhuyễn thân cua với chút muối. Lọc lấy nước cốt cua qua
+          rây. Bã cua bỏ đi.
+        </li>
+        <li>
+          <strong>Chuẩn bị riêu cua:</strong> Đun sôi nước cốt cua với lửa nhỏ,
+          khuấy nhẹ tay để riêu cua đóng thành mảng. Vớt riêu cua ra bát.
+        </li>
+        <li>
+          <strong>Sơ chế đậu phụ:</strong> Đậu phụ cắt miếng vuông vừa ăn, chiên
+          vàng.
+        </li>
+        <li><strong>Sơ chế cà chua:</strong> Cà chua rửa sạch, bổ múi cau.</li>
+        <li>
+          <strong>Làm tóp mỡ (tùy chọn):</strong> Mỡ heo thái hạt lựu, rán vàng
+          giòn thành tóp mỡ.
+        </li>
+        <li>
+          <strong>Nấu nước dùng:</strong>
+          <ul>
+            <li>
+              Phi thơm hành tím băm với dầu ăn. Cho cà chua vào xào đến khi mềm.
+            </li>
+            <li>Đổ nước lọc (lượng vừa ăn) vào nồi cà chua, đun sôi.</li>
+            <li>Cho riêu cua, đậu phụ chiên vào nồi nước dùng.</li>
+            <li>
+              Nêm mắm tôm (tùy lượng), nước cốt me (hoặc sấu), đường, muối, bột
+              ngọt (nếu dùng) cho vừa ăn, có vị chua thanh, đậm đà.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Hoàn thiện:</strong>
+          <ul>
+            <li>Chần bún qua nước sôi, cho vào tô.</li>
+            <li>
+              Gắp riêu cua, đậu phụ, cà chua vào tô bún. Rưới nước dùng nóng lên
+              trên.
+            </li>
+            <li>Thêm hành lá thái nhỏ và tóp mỡ (nếu dùng).</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Thưởng thức:</strong> Ăn nóng với rau sống các loại. Có thể
+          thêm chút ớt tươi hoặc sa tế tùy khẩu vị.
+        </li>
+      </ol>
+      <button class="favorite-button" onclick="addToFavorites()">
+        💖 Thêm vào mục yêu thích
+      </button>
+
+      <br />
+      <a href="index.html">← Quay lại trang chủ</a>
+      <div class="comments-section">
+        <h2>Bình luận và Đánh giá</h2>
+
+        <div class="comment-form">
+          <h3>Đánh giá của bạn</h3>
+          <div class="rating-input">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              for="star5"
+              >&#9733;</label
+            >
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              for="star4"
+              >&#9733;</label
+            >
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              for="star3"
+              >&#9733;</label
+            >
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              for="star2"
+              >&#9733;</label
+            >
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              for="star1"
+              >&#9733;</label
+            >
+          </div>
+          <textarea
+            id="commentText"
+            placeholder="Viết bình luận của bạn tại đây..."
+          ></textarea>
+          <button onclick="submitComment()">Gửi Bình luận</button>
+        </div>
+
+        <div class="comments-list" id="commentsList">
+          <p style="text-align: center; color: #888">Chưa có bình luận nào.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>
